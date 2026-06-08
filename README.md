@@ -1,16 +1,54 @@
-# React + Vite
+Dragon Ball Wiki
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un wiki interactif des personnages et planètes de Dragon Ball, construit avec React.
 
-Currently, two official plugins are available:
+##  Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Liste paginée de tous les personnages
+-  Recherche en temps réel depuis n'importe quelle page
+-  Filtres par race et affiliation
+-  Système de favoris
+-  Page des planètes avec détails
+-  Mode sombre / clair
+-  Sidebar de navigation
 
-## React Compiler
+##  Stack technique
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Outil | Rôle |
+|---|---|
+| React 18 | Framework UI |
+| Vite | Bundler |
+| Tailwind CSS v4 | Styles |
+| Axios | Appels API |
+| React Query | Gestion des données |
+| React Router | Navigation |
+| Lucide React | Icônes |
 
-## Expanding the ESLint configuration
+##  Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Cloner le projet
+git clone https://github.com/TonUsername/dragon-ball.git
+cd dragon-ball
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur
+npm run dev
+```
+
+## 🌐 API utilisée
+
+[Dragon Ball API](https://dragonball-api.com) — API gratuite fournissant personnages, transformations et planètes.
+
+##  Structure du projet
+src/
+├── api/          # Appels Axios
+├── context/      # Contextes globaux (thème, favoris, recherche, filtres)
+├── components/   # Composants réutilisables
+└── pages/        # Pages de l'application
+
+##  Auteur
+
+Mariama Baldé — L3 Informatique, UGANC
