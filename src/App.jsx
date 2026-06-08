@@ -12,13 +12,10 @@ function App() {
   const { dark } = useTheme()
 
   return (
-    <div className={`min-h-screen flex flex-col ${dark ? 'bg-gray-950 text-white' : 'bg-gray-50 text-gray-900'}`}>
-      {/* Navbar en haut */}
-      <Navbar />
-
-      {/* Sidebar + contenu */}
-      <div className="flex flex-1">
-        <AppSidebar />
+    <div className={`min-h-screen flex ${dark ? 'bg-gray-950 text-white' : 'bg-gray-50 text-gray-900'}`}>
+      <AppSidebar />
+      <div className="flex-1 flex flex-col">
+        <Navbar />
         <main className="flex-1 overflow-auto">
           <Routes>
             <Route path="/" element={<Home />} />

@@ -20,7 +20,7 @@ export default function Navbar() {
       dark ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-200'
     }`}>
       <Link to="/" className="text-2xl font-bold text-orange-500 shrink-0">
-         Dragon Ball
+
       </Link>
 
       <div className="relative flex-1 max-w-md">

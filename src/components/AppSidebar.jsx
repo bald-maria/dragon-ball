@@ -18,11 +18,12 @@ export default function AppSidebar() {
     <aside className={`w-64 min-h-screen border-r flex flex-col ${
       dark ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-200'
     }`}>
-
-      {/* Logo */}
-      <div className="px-6 py-5 border-b border-gray-200 dark:border-gray-800">
-        <Link to="/" className="text-xl font-bold text-orange-500">
-           Dragon Ball
+      <div className="px-4 py-5 flex items-center gap-3 border-b">
+        <Link to="/" className="flex items-center gap-3">
+          <span className="text-2xl"></span>
+          <span className={`text-lg font-bold ${dark ? 'text-white' : 'text-orange-500'}`}>
+            Dragon Ball
+          </span>
         </Link>
       </div>
 

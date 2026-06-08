@@ -23,7 +23,7 @@ export default function Planetes() {
 
   if (isError) return (
     <div className="text-center py-32 text-red-400">
-       Erreur de chargement
+      ❌ Erreur de chargement
     </div>
   )
 
@@ -40,30 +40,30 @@ export default function Planetes() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {planetes.map((planete) => (
-          <Link key={planete.id} to={`/planetes/${planete.id}`}>
-            <div className={`rounded-lg overflow-hidden border hover:border-orange-400 transition ${
-              dark ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-200'
-            }`}>
-              <div className="h-48 overflow-hidden bg-gray-800">
-                <img
-                  src={planete.image}
-                  alt={planete.name}
-                  className="w-full h-full object-cover hover:scale-105 transition duration-500"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-1">{planete.name}</h3>
-                <p className={`text-sm line-clamp-2 ${dark ? 'text-gray-400' : 'text-gray-500'}`}>
-                  {planete.description}
-                </p>
-                {planete.isDestroyed && (
-                  <span className="mt-2 inline-block text-xs bg-red-500 text-white px-2 py-0.5 rounded">
-                    Détruite
-                  </span>
-                )}
-              </div>
-            </div>
-          </Link>
+          <Link key={planete.id} to={`/planetes/${planete.id}`} className="flex">
+  <div className={`rounded-lg overflow-hidden border hover:border-orange-400 transition flex flex-col h-full ${
+  dark ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-200'
+}`}>
+  <div className="h-48 overflow-hidden bg-gray-800 shrink-0">
+    <img
+      src={planete.image}
+      alt={planete.name}
+      className="w-full h-full object-cover hover:scale-105 transition duration-500"
+    />
+  </div>
+  <div className="p-4 flex flex-col flex-1">
+    <h3 className="font-bold text-lg mb-1">{planete.name}</h3>
+    <p className={`text-sm line-clamp-3 flex-1 ${dark ? 'text-gray-400' : 'text-gray-500'}`}>
+      {planete.description}
+    </p>
+    {planete.isDestroyed && (
+      <span className="mt-3 inline-block text-xs bg-red-500 text-white px-2 py-0.5 rounded w-fit">
+        Détruite
+      </span>
+    )}
+  </div>
+</div>
+        </Link>
         ))}
       </div>
 
