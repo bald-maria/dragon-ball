@@ -24,6 +24,33 @@ Un wiki interactif des personnages et planètes de Dragon Ball, construit avec R
 | React Router | Navigation |
 | Lucide React | Icônes |
 
+
+### Screenshots
+<div align="center">
+
+### Page d'accueil
+<img src="screenshots/Acceuil.png" width="800"/>
+
+### Page détail personnage
+<img src="screenshots/Detailperso.png" width="800"/>
+
+### Page favoris
+<img src="screenshots/favoris.png" width="800"/>
+
+### Page planètes
+<img src="screenshots/Planet.png" width="800"/>
+
+### Page dark
+<img src="screenshots/dark.png" width="800"/>
+
+### Page Détail planet
+<img src="screenshots/Détailplanet.png" width="800"/>
+
+
+</div>
+
+
+
 ##  Installation
 
 ```bash
