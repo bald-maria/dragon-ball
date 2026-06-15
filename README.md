@@ -38,7 +38,7 @@ Un wiki interactif des personnages et planètes de Dragon Ball, construit avec R
 <img src="screenshots/favoris.png" width="800"/>
 
 ### Page planètes
-<img src="screenshots/Planet.png" width="800"/>
+<img src="screenshots/Planetes.png" width="800"/>
 
 ### Page dark
 <img src="screenshots/dark.png" width="800"/>
